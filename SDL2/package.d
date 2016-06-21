@@ -1,0 +1,45 @@
+﻿module SDL2;
+
+pragma(lib, "SDL2.lib");
+///pragma(lib, "SDL2_mixer.lib");
+///pragma(lib, "SDL2_ttf.lib");
+///pragma(lib, "SDL2_mixer.lib");
+///pragma(lib, "SDL2_image.lib");
+
+public:
+import SDL2.assert_;
+import SDL2.audio;
+import SDL2.blendmode;
+import SDL2.clipboard;
+import SDL2.cpuinfo;
+import SDL2.error;
+import SDL2.events;
+import SDL2.filesystem;
+import SDL2.gamecontroller;
+import SDL2.gesture;
+import SDL2.haptic;
+import SDL2.hints;
+import SDL2.joystick;
+import SDL2.keyboard;
+import SDL2.keycode;
+import SDL2.loadso;
+import SDL2.log;
+import SDL2.messagebox;
+import SDL2.mouse;
+import SDL2.pixels;
+import SDL2.platform;
+import SDL2.power;
+import SDL2.quit;
+import SDL2.rect;
+import SDL2.render;
+import SDL2.rwops;
+import SDL2.scancode;
+import SDL2.sdl;
+import SDL2.shape;
+import SDL2.surface;
+import SDL2.system;
+import SDL2.syswm;
+import SDL2.timer;
+import SDL2.touch;
+import SDL2.version_;
+import SDL2.video;
