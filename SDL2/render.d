@@ -67,7 +67,8 @@ int SDL_GL_BindTexture(SDL_Texture*, float*, float*);
 int SDL_GL_UnbindTexture(SDL_Texture*);
 
 
-enum SDL_RendererFlags : uint {
+alias SDL_RendererFlags = uint;
+enum : uint {
 	SDL_RENDERER_SOFTWARE = 0x00000001,
 	SDL_RENDERER_ACCELERATED = 0x00000002,
 	SDL_RENDERER_PRESENTVSYNC = 0x00000004,
@@ -83,19 +84,22 @@ struct SDL_RendererInfo {
 	int max_texture_height;
 }
 
-enum SDL_TextureAccess {
+alias SDL_TextureAccess = int;
+enum {
 	SDL_TEXTUREACCESS_STATIC,
 	SDL_TEXTUREACCESS_STREAMING,
 	SDL_TEXTUREACCESS_TARGET,
 }
 
-enum SDL_TextureModulate {
+alias SDL_TextureModulate = int;
+enum {
 	SDL_TEXTUREMODULATE_NONE = 0x00000000,
 	SDL_TEXTUREMODULATE_COLOR = 0x00000001,
 	SDL_TEXTUREMODULATE_ALPHA = 0x00000002
 }
 
-enum SDL_RendererFlip {
+alias SDL_RendererFlip = int;
+enum {
 	SDL_FLIP_NONE = 0x00000000,
 	SDL_FLIP_HORIZONTAL = 0x00000001,
 	SDL_FLIP_VERTICAL = 0x00000002,
